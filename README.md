@@ -206,3 +206,26 @@ enum MessageType {
     MessageEventSyncEnd    = 22;        // NoDB    -> there's no new message in server.
 }
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 客户端（Android）
+
+### 主要以app Moudle为主，编译也是编译该Moudle
