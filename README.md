@@ -253,3 +253,22 @@ enum MessageType {
 Android studio ---》Build-》Generate Signed Apk
 
 详情 https://www.cnblogs.com/gao-chun/p/4891275.html 注意 Signature Versions V1(Jar Signature) V2(Full APK Signature) 都选上
+
+
+
+
+
+
+
+# 客户端（iOS）
+
+### 使用cocoapods  需要在Mac上安装cocoapods（谷歌百度都有）然后拉下项目执行pod install
+
+##### 一、资源文件
+1.站点连接地址 ——> config -> baseconfig.swift
+2.appLogo ——> images.xcassets -> appicon。删除原来的 自己替换 https://icon.wuruihong.com/  这个网址可以快速制作
+3.开屏页面—>   images.xcassets -> main -> 启动图 3张自己替换
+4.应用包名修改--->项目打开后的首级目录。bundle identifier
+5.应用版本号  项目打开后的首级目录。version
+6.推送渠道appid ——>  zaly -> appdelegate+push.swift.     didRegisterForRemoteNotificationsWithDeviceToken.   已经答应了devicetoken的string类型
+7.平台地址（推送服务器） config -> baseconfig.swift
