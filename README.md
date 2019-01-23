@@ -228,4 +228,19 @@ enum MessageType {
 
 # 客户端（Android）
 
-### 主要以app Moudle为主，编译也是编译该Moudle
+### 主要以app Moudle为主，编译也是编译该Moudle，推荐使用Android studio 3.0版本
+
+##### 一、资源文件
+1.站点连接地址 ---->res/values(values-zh-rCN)/strings.xml  zh-rCn下为中国地区访问资源文件，泛指系统语言设置为中文情况下。
+2.appLogo---->@mipmap/ic_duck_chat_logo   @mipmap/ic_duck_chat_logo_round  round为安卓8.0以上系统默认采用的圆形图标  注意logo分辨率适配
+3.开屏页面--->@mipmap/ic_duck_chat_splash  
+4.应用包名修改--->app Moudle下build.gradle文件下applicationId
+5.应用版本号 projece目录下 gradle.propertiesAPPLICATION_VERSION_NAME 例如1.1.1   APPLICATION_VERSION_CODE 必须为数字例如11
+6.推送渠道appid ---->友盟 com.akaxin.zaly.bean.Constants 类下  UM_PUSH_SECRET  UM_APP_KEY 2个值
+		     小米 com.akaxin.zaly.bean.Constants 类下 MI_APP_ID  MI_APP_KEY
+		     华为 app Moudle下build.gradle文件下 hwpush
+7.平台地址（推送服务器） com.akaxin.zaly.bean.Constants 类下  PLATFORM_ADDRESS
+
+##### 二、编译
+Android studio ---》Build-》Generate Signed Apk
+详情 https://www.cnblogs.com/gao-chun/p/4891275.html 注意 Signature Versions V1(Jar Signature) V2(Full APK Signature) 都选上
