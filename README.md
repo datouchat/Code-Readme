@@ -275,6 +275,6 @@ Android studio ---》Build-》Generate Signed Apk
 
 5.应用版本号  项目打开后的首级目录。version
 
-6.推送渠道appid ——>  zaly -> appdelegate+push.swift.     didRegisterForRemoteNotificationsWithDeviceToken.   已经答应了devicetoken的string类型
+6.推送渠道appid ——>  zaly -> appdelegate+push.swift.     didRegisterForRemoteNotificationsWithDeviceToken.   已经答应了devicetoken的string类型 （打包前需要设置推送证书，参考：https://www.jianshu.com/p/adfce0921c09）
 
 7.平台地址（推送服务器） config -> baseconfig.swift
