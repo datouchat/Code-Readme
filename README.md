@@ -161,7 +161,7 @@ message PushBody{
     // if pushContent != "", use pushContent
     // else make the content from msgType.
     core.MessageType msgType = 6;
-    string pushContent       = 7;
+    string pushContent       = 7;  必须在站点设置选择显示消息内容，否则推送不显示内容
 
     // icon
     // avatar must be prefix with "http://" or "https://" 
