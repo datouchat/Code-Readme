@@ -278,3 +278,4 @@ Android studio ---》Build-》Generate Signed Apk
 6.推送渠道appid ——>  zaly -> appdelegate+push.swift.     didRegisterForRemoteNotificationsWithDeviceToken.   已经答应了devicetoken的string类型 （打包前需要设置推送证书，参考：https://www.jianshu.com/p/adfce0921c09）
 
 7.平台地址（推送服务器） config -> baseconfig.swift
+  如：http://127.0.0.1:9001/push-platform/
