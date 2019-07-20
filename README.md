@@ -279,3 +279,6 @@ Android studio ---》Build-》Generate Signed Apk
 
 7.平台地址（推送服务器） config -> baseconfig.swift
   如：http://127.0.0.1:9001/push-platform/
+8、在电脑安装cocoapods 
+   然后pod update
+   不然消息收到不会提示
